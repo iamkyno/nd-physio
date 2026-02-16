@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noxolo Duma Physiotherapy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo" onclick="showPage('home')">
+            <img src="logo.png" alt="Noxolo Duma Physiotherapy" class="logo-img">
+        </a>
+        <nav class="nav-links">
+            <a href="#" class="nav-link active" data-page="home" onclick="showPage('home')">Home</a>
+            <a href="#" class="nav-link" data-page="about" onclick="showPage('about')">About Us</a>
+            <a href="#" class="nav-link" data-page="services" onclick="showPage('services')">Our Services</a>
+            <a href="#" class="nav-link" data-page="team" onclick="showPage('team')">Meet the Team</a>
+            <a href="#" class="nav-link" data-page="contact" onclick="showPage('contact')">Contact Us</a>
+        </nav>
+        <button class="nav-cta" onclick="openBooking()">Book Appointment</button>
+        <button class="hamburger" onclick="toggleMenu()" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#" onclick="showPage('home'); toggleMenu()">Home</a>
+        <a href="#" onclick="showPage('about'); toggleMenu()">About Us</a>
+        <a href="#" onclick="showPage('services'); toggleMenu()">Our Services</a>
+        <a href="#" onclick="showPage('team'); toggleMenu()">Meet the Team</a>
+        <a href="#" onclick="showPage('contact'); toggleMenu()">Contact Us</a>
+    </div>
+</header>
+
+<!-- ========== HOME PAGE ========== -->
+<div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Specialist Physiotherapy &amp; Rehabilitation</span>
+                <h1>Evidence-Based Care for <span class="accent">Every</span> Stage of Your Health</h1>
+                <p>Noxolo Duma Physiotherapy delivers expert, research-driven physiotherapy with a special focus on paediatric rehabilitation, neurological conditions, and community-based care across KwaZulu-Natal.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary" onclick="openBooking()">Book an Appointment</button>
+                    <button class="btn-outline" onclick="showPage('services')">Our Services</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num" data-target="3">0</span><span>+</span><p>Publications</p></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-num" data-target="961">0</span><span>+</span><p>Research Reads</p></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-num" data-target="15">0</span><span>+</span><p>Citations</p></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card-main">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&h=600&fit=crop&q=80" alt="Physiotherapy treatment">
+                    <div class="hero-badge-float">
+                        <div class="badge-icon">✦</div>
+                        <div>
+                            <strong>HPCSA Registered</strong>
+                            <p>PhD Candidate · UKZN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card-side">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=350&fit=crop&q=80" alt="Paediatric Rehabilitation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <div class="trust-item"><span class="trust-icon">🎓</span><span>PhD Candidate · UKZN</span></div>
+            <div class="trust-sep"></div>
+            <div class="trust-item"><span class="trust-icon">📋</span><span>Master of Public Health</span></div>
+            <div class="trust-sep"></div>
+            <div class="trust-item"><span class="trust-icon">🏥</span><span>HPCSA Registered</span></div>
+            <div class="trust-sep"></div>
+            <div class="trust-item"><span class="trust-icon">🔬</span><span>Published Researcher</span></div>
+            <div class="trust-sep"></div>
+            <div class="trust-item"><span class="trust-icon">💳</span><span>Medical Aid Accepted</span></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SNIPPET -->
+    <section class="about-snippet">
+        <div class="split-layout">
+            <div class="split-images">
+                <div class="img-main">
+                    <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=500&h=550&fit=crop&q=80" alt="Noxolo Duma at work">
+                </div>
+                <div class="img-accent">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=280&h=300&fit=crop&q=80" alt="Paediatric care">
+                </div>
+                <div class="experience-badge">
+                    <strong>MPH</strong>
+                    <span>Public Health</span>
+                </div>
+            </div>
+            <div class="split-text">
+                <span class="section-tag">About Noxolo Duma</span>
+                <h2>A Clinician, Researcher &amp; Advocate for Better Health</h2>
+                <p>Noxolo Duma is a registered physiotherapist and PhD Candidate at the University of KwaZulu-Natal (UKZN), where she focuses her doctoral research on developing contextualised, evidence-based rehabilitation models for children with Cerebral Palsy in South Africa.</p>
+                <p>Holding a Master of Public Health, Noxolo bridges the gap between clinical physiotherapy practice and public health — bringing a uniquely broad perspective to patient care and community-based rehabilitation.</p>
+                <div class="feature-list">
+                    <div class="feature-item"><span class="check">✓</span>Paediatric Rehabilitation Specialist</div>
+                    <div class="feature-item"><span class="check">✓</span>Neurology &amp; Community-Based Rehab</div>
+                    <div class="feature-item"><span class="check">✓</span>Published in Peer-Reviewed Journals</div>
+                    <div class="feature-item"><span class="check">✓</span>Preventive Medicine &amp; Mental Health Focus</div>
+                </div>
+                <button class="btn-primary" onclick="showPage('about')">Learn More About Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview">
+        <div class="section-header centered">
+            <span class="section-tag">Our Services</span>
+            <h2>Specialist Physiotherapy Services</h2>
+            <p>Comprehensive, research-informed physiotherapy with a focus on paediatric, neurological, and community-based rehabilitation.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="showPage('services')">
+                <div class="service-icon-wrap"><span>👶</span></div>
+                <h3>Paediatric Rehabilitation</h3>
+                <p>Specialised physiotherapy for children, including those with Cerebral Palsy, developmental delays, and paediatric neurological conditions.</p>
+                <span class="card-arrow">→</span>
+            </div>
+            <div class="service-card featured" onclick="showPage('services')">
+                <div class="service-icon-wrap"><span>🧠</span></div>
+                <h3>Neurological Rehabilitation</h3>
+                <p>Expert management of neurological conditions affecting movement, posture, and function — grounded in the latest clinical evidence.</p>
+                <span class="card-arrow">→</span>
+            </div>
+            <div class="service-card" onclick="showPage('services')">
+                <div class="service-icon-wrap"><span>🏘️</span></div>
+                <h3>Community-Based Rehabilitation</h3>
+                <p>Accessible, contextually relevant rehabilitation services designed to reach patients in community settings across KwaZulu-Natal.</p>
+                <span class="card-arrow">→</span>
+            </div>
+            <div class="service-card" onclick="showPage('services')">
+                <div class="service-icon-wrap"><span>🤲</span></div>
+                <h3>Manual Therapy</h3>
+                <p>Hands-on physiotherapy techniques to reduce pain, restore mobility, and improve quality of life for patients of all ages.</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </div>
+        <div class="centered-btn">
+            <button class="btn-outline-dark" onclick="showPage('services')">View All Services →</button>
+        </div>
+    </section>
+
+    <!-- RESEARCH HIGHLIGHT -->
+    <section class="research-highlight">
+        <div class="research-inner">
+            <div class="section-header">
+                <span class="section-tag light">Research &amp; Publications</span>
+                <h2>Advancing Physiotherapy Through Research</h2>
+                <p>Noxolo Duma's clinical practice is informed by active academic research published in peer-reviewed international journals.</p>
+            </div>
+            <div class="research-cards">
+                <div class="research-card" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/37393357/', '_blank')">
+                    <div class="research-year">2023</div>
+                    <h4>Physiotherapy management of children with cerebral palsy in low- and middle-income countries: a scoping review protocol</h4>
+                    <p>Duma N.E., Hlongwa M., Benjamin-Damons N., Hlongwana K.W. · <em>Systematic Reviews, 12, 110</em></p>
+                    <span class="research-link">Read on PubMed →</span>
+                </div>
+                <div class="research-card" onclick="window.open('https://www.researchgate.net/profile/Noxolo_Duma2', '_blank')">
+                    <div class="research-year">2023</div>
+                    <h4>A Contextualised Evidence-Based Interprofessional Rehabilitation Model for Children with Cerebral Palsy in KwaZulu-Natal, South Africa</h4>
+                    <p>Duma N.E. et al. · <em>Sequential Multi-Method Study Protocol (Preprint)</em></p>
+                    <span class="research-link">View on ResearchGate →</span>
+                </div>
+                <div class="research-card" onclick="window.open('https://www.researchgate.net/profile/Noxolo_Duma2', '_blank')">
+                    <div class="research-year">Ongoing</div>
+                    <h4>PhD Research: Interprofessional Rehabilitation Framework for Children with Cerebral Palsy in KwaZulu-Natal</h4>
+                    <p>University of KwaZulu-Natal · <em>School of Nursing and Public Health</em></p>
+                    <span class="research-link">View Profile →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-inner">
+            <div class="section-header">
+                <span class="section-tag light">Testimonials</span>
+                <h2>What Our Patients Say</h2>
+            </div>
+            <div class="testimonials-track" id="testimonialsTrack">
+                <div class="testimonial-slide active">
+                    <div class="stars">★★★★★</div>
+                    <p>"After my son was diagnosed with Cerebral Palsy, we were devastated. Noxolo and her team gave us hope. Her deep knowledge of paediatric rehabilitation is extraordinary — she treats our child with such skill and compassion."</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/60?img=47" alt="Patient family">
+                        <div><strong>Thandiwe Mokoena</strong><span>Parent — Paediatric Rehab Patient</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p>"I suffered from chronic back pain for years. What impressed me most about Noxolo Duma Physiotherapy is the evidence-based approach — she explains the science behind every treatment. After 8 sessions, I am pain-free."</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/60?img=32" alt="Patient">
+                        <div><strong>Marcus Sithole</strong><span>Back Pain Patient, Durban</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p>"The community-based rehabilitation programme changed my grandmother's life after her stroke. She now walks independently. The holistic, person-centred approach is something truly special."</p>
+                    <div class="t-author">
+                        <img src="https://i.pravatar.cc/60?img=25" alt="Patient">
+                        <div><strong>Lerato Khumalo</strong><span>Family of Neurological Rehab Patient</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-nav">
+                <button class="t-btn" onclick="prevTestimonial()">←</button>
+                <div class="t-dots">
+                    <span class="t-dot active" onclick="goTestimonial(0)"></span>
+                    <span class="t-dot" onclick="goTestimonial(1)"></span>
+                    <span class="t-dot" onclick="goTestimonial(2)"></span>
+                </div>
+                <button class="t-btn" onclick="nextTestimonial()">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Start Your Journey to Better Health?</h2>
+            <p>Book your consultation today. Evidence-based physiotherapy tailored to your unique needs.</p>
+            <button class="btn-white" onclick="openBooking()">Book Your Consultation</button>
+        </div>
+    </section>
+
+</div><!-- /home -->
+
+<!-- ========== ABOUT PAGE ========== -->
+<div id="page-about" class="page">
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag light">Our Story</span>
+            <h1>About Noxolo Duma Physiotherapy</h1>
+            <p>A practice built on rigorous research, clinical excellence, and a deep commitment to improving the health of every patient we serve.</p>
+        </div>
+    </section>
+
+    <section class="about-story">
+        <div class="split-layout reverse">
+            <div class="split-text">
+                <span class="section-tag">Who We Are</span>
+                <h2>Clinically Excellent. Research-Driven. People-Centred.</h2>
+                <p>Noxolo Duma Physiotherapy is founded and led by <strong>Noxolo E. Duma</strong> — a registered physiotherapist, Master of Public Health graduate, and current PhD Candidate at the University of KwaZulu-Natal (UKZN).</p>
+                <p>Noxolo's doctoral research focuses on developing a <em>Contextualised Evidence-Based Interprofessional Rehabilitation Model Responsive to the Needs of Children with Cerebral Palsy in KwaZulu-Natal</em> — research that directly informs the quality of care provided at this practice.</p>
+                <p>With expertise spanning paediatric rehabilitation, neurological conditions, public health, mental health, and community-based rehabilitation, this practice offers a uniquely comprehensive and evidence-informed approach to physiotherapy care.</p>
+            </div>
+            <div class="split-images">
+                <div class="img-main">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=550&fit=crop&q=80" alt="Clinical practice">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE AREAS -->
+    <section class="values-section">
+        <div class="section-header centered">
+            <span class="section-tag">Areas of Expertise</span>
+            <h2>Skills &amp; Specialisations</h2>
+            <p>Noxolo Duma's clinical expertise is directly informed by her academic research and public health background.</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">👶</div>
+                <h3>Paediatric Rehabilitation</h3>
+                <p>Specialised assessment and treatment of children with physical, neurological, and developmental conditions including Cerebral Palsy.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🧠</div>
+                <h3>Neurology Rehabilitation</h3>
+                <p>Evidence-based physiotherapy for neurological conditions, guided by the latest clinical research and rehabilitative frameworks.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🏘️</div>
+                <h3>Community-Based Rehab</h3>
+                <p>Contextualised rehabilitation delivered in community settings, aligned with South African public health priorities and realities.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🧘</div>
+                <h3>Mental Health</h3>
+                <p>Physiotherapy support that acknowledges the psychological dimensions of pain and disability, promoting holistic wellbeing.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💊</div>
+                <h3>Preventive Medicine</h3>
+                <p>Proactive, preventive care strategies that reduce the risk of injury, disease progression, and long-term disability.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h3>Delivery of Health Care</h3>
+                <p>Expertise in how healthcare is structured and delivered — ensuring patients receive the right care, in the right way, at the right time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMIC PROFILE -->
+    <section class="academic-section">
+        <div class="academic-inner">
+            <div class="section-header centered">
+                <span class="section-tag">Academic Profile</span>
+                <h2>Qualifications &amp; Research</h2>
+            </div>
+            <div class="academic-grid">
+                <div class="qual-card">
+                    <div class="qual-icon">🎓</div>
+                    <h4>PhD Candidate</h4>
+                    <p>University of KwaZulu-Natal (UKZN)</p>
+                    <span>School of Nursing and Public Health</span>
+                </div>
+                <div class="qual-card">
+                    <div class="qual-icon">📋</div>
+                    <h4>Master of Public Health (MPH)</h4>
+                    <p>University of KwaZulu-Natal</p>
+                    <span>Public Health Medicine</span>
+                </div>
+                <div class="qual-card">
+                    <div class="qual-icon">🏥</div>
+                    <h4>Registered Physiotherapist</h4>
+                    <p>Health Professions Council of South Africa</p>
+                    <span>HPCSA Registered</span>
+                </div>
+                <div class="qual-card">
+                    <div class="qual-icon">🔬</div>
+                    <h4>Active Researcher</h4>
+                    <p>3 Publications · 961+ Reads · 15+ Citations</p>
+                    <span>ResearchGate Verified</span>
+                </div>
+            </div>
+            <div class="centered-btn" style="margin-top:2rem;">
+                <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" class="btn-outline-dark">View Full Research Profile on ResearchGate →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section" style="padding-top:0;">
+        <div class="section-header centered">
+            <span class="section-tag">Our Values</span>
+            <h2>What Drives Everything We Do</h2>
+        </div>
+        <div class="accred-grid">
+            <div class="accred-item">
+                <div class="accred-icon">💡</div>
+                <strong>Evidence-Based</strong>
+                <p>All treatments are grounded in current clinical research, including Noxolo's own published work.</p>
+            </div>
+            <div class="accred-item">
+                <div class="accred-icon">❤️</div>
+                <strong>Patient-Centred</strong>
+                <p>We treat the whole person — understanding your context, goals, and lived experience.</p>
+            </div>
+            <div class="accred-item">
+                <div class="accred-icon">🌍</div>
+                <strong>Contextually Relevant</strong>
+                <p>Care that is designed for the South African context — practical, accessible, and culturally sensitive.</p>
+            </div>
+            <div class="accred-item">
+                <div class="accred-icon">⭐</div>
+                <strong>Academic Excellence</strong>
+                <p>A practice informed by active PhD-level research, keeping our treatments at the cutting edge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Want to Know More? Let's Connect.</h2>
+            <p>We'd love to discuss how our evidence-based approach can help you.</p>
+            <button class="btn-white" onclick="openBooking()">Book a Consultation</button>
+        </div>
+    </section>
+</div><!-- /about -->
+
+<!-- ========== SERVICES PAGE ========== -->
+<div id="page-services" class="page">
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag light">What We Offer</span>
+            <h1>Our Physiotherapy Services</h1>
+            <p>Comprehensive, specialist physiotherapy grounded in research — from paediatric rehab to neurological recovery and beyond.</p>
+        </div>
+    </section>
+
+    <section class="services-full">
+        <div class="services-full-grid">
+            <div class="service-full-card" onclick="openServiceDetail('paeds')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=350&fit=crop&q=80" alt="Paediatric Rehab"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">👶</div>
+                    <h3>Paediatric Rehabilitation</h3>
+                    <p>Expert physiotherapy for children with Cerebral Palsy, developmental delays, and paediatric neurological conditions. Informed by Noxolo Duma's own published research on CP management in low- and middle-income countries.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+            <div class="service-full-card" onclick="openServiceDetail('neuro')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=350&fit=crop&q=80" alt="Neurological Rehab"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">🧠</div>
+                    <h3>Neurological Rehabilitation</h3>
+                    <p>Assessment and treatment of neurological conditions affecting movement, balance, and functional independence. Evidence-based approaches for stroke, brain injury, Parkinson's, and more.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+            <div class="service-full-card" onclick="openServiceDetail('community')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=350&fit=crop&q=80" alt="Community Rehab"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">🏘️</div>
+                    <h3>Community-Based Rehabilitation</h3>
+                    <p>Rehabilitation services delivered within community settings — making quality physiotherapy accessible to patients across KwaZulu-Natal, regardless of circumstance.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+            <div class="service-full-card" onclick="openServiceDetail('mental')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=350&fit=crop&q=80" alt="Mental Health"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">🧘</div>
+                    <h3>Mental Health &amp; Wellbeing</h3>
+                    <p>Physiotherapy that acknowledges the strong link between physical health and mental wellbeing. Holistic programmes that support both body and mind.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+            <div class="service-full-card" onclick="openServiceDetail('manual')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=350&fit=crop&q=80" alt="Manual Therapy"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">🤲</div>
+                    <h3>Manual Therapy</h3>
+                    <p>Hands-on physiotherapy techniques — mobilisation, manipulation, soft tissue release — to reduce pain and restore optimal movement and function.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+            <div class="service-full-card" onclick="openServiceDetail('preventive')">
+                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=350&fit=crop&q=80" alt="Preventive Care"></div>
+                <div class="sfc-body">
+                    <div class="sfc-icon">🛡️</div>
+                    <h3>Preventive Medicine &amp; Health Promotion</h3>
+                    <p>Proactive physiotherapy programmes to prevent injury and disability before they occur — personalised to your lifestyle, occupation, and health profile.</p>
+                    <button class="btn-small">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Not Sure Which Service You Need?</h2>
+            <p>Book your initial consultation and we'll guide you to the right evidence-based treatment.</p>
+            <button class="btn-white" onclick="openBooking()">Book your Consultation</button>
+        </div>
+    </section>
+</div><!-- /services -->
+
+<!-- ========== MEET THE TEAM PAGE ========== -->
+<div id="page-team" class="page">
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag light">The People Behind Your Recovery</span>
+            <h1>Meet Our Team</h1>
+            <p>Led by a PhD-level researcher and clinician, our team brings academic rigour and genuine compassion to every patient interaction.</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="team-intro">
+            <p>Every member of our team is HPCSA registered and committed to continuous professional development. Our clinical practice is directly informed by peer-reviewed research — ensuring you receive care that reflects the current best evidence in physiotherapy.</p>
+        </div>
+        <div class="team-grid">
+
+            <!-- NOXOLO DUMA — REAL PROFILE -->
+            <div class="team-card featured-card" onclick="openTeamModal('noxolo')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=450&fit=crop&q=80" alt="Noxolo Duma">
+                    <div class="team-overlay"><span>View Full Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <div class="founder-badge">Founder</div>
+                    <h3>Noxolo E. Duma</h3>
+                    <span class="team-role">Principal Physiotherapist &amp; PhD Candidate</span>
+                    <p>MPH · UKZN · 3 Publications · 15+ Citations</p>
+                    <div class="team-tags">
+                        <span>Paediatric Rehab</span>
+                        <span>Neurology</span>
+                        <span>Public Health</span>
+                        <span>Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="openTeamModal('sipho')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=450&fit=crop&q=80" alt="Sipho Mthembu">
+                    <div class="team-overlay"><span>View Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <h3>Sipho Mthembu</h3>
+                    <span class="team-role">Senior Physiotherapist</span>
+                    <p>BSc Hons Physiotherapy (Wits) · 10 Years Experience</p>
+                    <div class="team-tags"><span>Orthopaedics</span><span>Dry Needling</span></div>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="openTeamModal('ayanda')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=450&fit=crop&q=80" alt="Ayanda Zulu">
+                    <div class="team-overlay"><span>View Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <h3>Ayanda Zulu</h3>
+                    <span class="team-role">Paediatric Physiotherapist</span>
+                    <p>BSc Physiotherapy (UKZN) · 7 Years Experience</p>
+                    <div class="team-tags"><span>Paediatrics</span><span>Neurology</span></div>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="openTeamModal('palesa')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=450&fit=crop&q=80" alt="Palesa Molefe">
+                    <div class="team-overlay"><span>View Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <h3>Palesa Molefe</h3>
+                    <span class="team-role">Rehabilitation Specialist</span>
+                    <p>BSc Physiotherapy (UP) · 6 Years Experience</p>
+                    <div class="team-tags"><span>Postural</span><span>Women's Health</span></div>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="openTeamModal('thabo')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=450&fit=crop&q=80" alt="Thabo Nkosi">
+                    <div class="team-overlay"><span>View Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <h3>Thabo Nkosi</h3>
+                    <span class="team-role">Sports Physiotherapist</span>
+                    <p>BSc Hons Sports Science (TUT) · 8 Years Experience</p>
+                    <div class="team-tags"><span>Sports Injuries</span><span>Biomechanics</span></div>
+                </div>
+            </div>
+
+            <div class="team-card" onclick="openTeamModal('zanele')">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=450&fit=crop&q=80" alt="Zanele Dlamini">
+                    <div class="team-overlay"><span>View Profile</span></div>
+                </div>
+                <div class="team-info">
+                    <h3>Zanele Dlamini</h3>
+                    <span class="team-role">Practice Manager &amp; Physiotherapist</span>
+                    <p>BSc Physiotherapy (Rhodes) · 9 Years Experience</p>
+                    <div class="team-tags"><span>Geriatrics</span><span>Chronic Pain</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="join-team">
+        <div class="join-inner">
+            <h2>Want to Join Our Team?</h2>
+            <p>We are looking for passionate physiotherapists who share our commitment to evidence-based, patient-centred care.</p>
+            <button class="btn-outline" onclick="showPage('contact')">Get In Touch</button>
+        </div>
+    </section>
+</div><!-- /team -->
+
+<!-- ========== CONTACT PAGE ========== -->
+<div id="page-contact" class="page">
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag light">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Book an appointment or reach out with any questions.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Visit Our Practice</h2>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="cc-icon">📍</div>
+                        <div>
+                            <strong>Address</strong>
+                            <p>Ground Floor, Unit 14, Durdoc Centre, 460 Anton Lembede St, Durban Central, Durban, 4000</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="cc-icon">📧</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:info@nd-physio.co.za">info@nd-physio.co.za</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="cc-icon">🕐</div>
+                        <div>
+                            <strong>Hours</strong>
+                            <p>Mon–Fri: 7:30am – 6:00pm<br>Sat: 8:00am – 1:00pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" class="social-btn">ResearchGate</a>
+                    <a href="mailto:info@nd-physio.co.za" class="social-btn">Email Us</a>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" onsubmit="handleContact(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+27 00 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <select required>
+                                <option value="">Select subject</option>
+                                <option>Book an Appointment</option>
+                                <option>Paediatric Rehab Enquiry</option>
+                                <option>Neurological Rehab Enquiry</option>
+                                <option>Research Collaboration</option>
+                                <option>Medical Aid Query</option>
+                                <option>Careers</option>
+                                <option>General Enquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message *</label>
+                        <textarea required rows="5" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-placeholder">
+            <div class="map-inner">
+                <span class="map-icon">📍</span>
+                <h3>Find Us in KwaZulu-Natal, South Africa</h3>
+                <p>Conveniently located in KwaZulu-Natal — serving patients across the province with specialist physiotherapy care.</p>
+                <a href="https://maps.google.com" target="_blank" class="map-btn">📍 Open in Google Maps</a>
+            </div>
+        </div>
+    </section>
+</div><!-- /contact -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-col brand">
+                <img src="logo.png" alt="Noxolo Duma Physiotherapy" class="footer-logo">
+                <p>Evidence-based physiotherapy led by a PhD Candidate and MPH graduate. Specialist paediatric, neurological, and community-based rehabilitation across KwaZulu-Natal.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                    <li><a href="#" onclick="showPage('services')">Our Services</a></li>
+                    <li><a href="#" onclick="showPage('team')">Meet the Team</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('services')">Paediatric Rehabilitation</a></li>
+                    <li><a href="#" onclick="showPage('services')">Neurological Rehabilitation</a></li>
+                    <li><a href="#" onclick="showPage('services')">Community-Based Rehab</a></li>
+                    <li><a href="#" onclick="showPage('services')">Mental Health &amp; Wellbeing</a></li>
+                    <li><a href="#" onclick="showPage('services')">Manual Therapy</a></li>
+                    <li><a href="#" onclick="showPage('services')">Preventive Medicine</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Ground Floor, Unit 14, Durdoc Centre, 460 Anton Lembede St, Durban Central, Durban, 4000</li>
+                    <li><a href="mailto:info@nd-physio.co.za">📧 info@nd-physio.co.za</a></li>
+                    <li>🕐 Mon–Fri: 7:30am – 6:00pm</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="mailto:info@nd-physio.co.za" title="Email">✉</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Noxolo Duma Physiotherapy. All rights reserved. HPCSA Registered.</p>
+            <div>
+                <a href="#" onclick="return false;">Privacy Policy</a>
+                <a href="#" onclick="return false;">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeBooking()">×</button>
+        <div class="modal-header-bar">
+            <h2>📅 Book Your Appointment</h2>
+            <p>Fill in the form and we'll confirm your booking within 2 hours.</p>
+        </div>
+        <form onsubmit="handleBooking(event)" class="booking-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="bookEmail" required placeholder="your@email.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" required placeholder="+27 00 000 0000">
+                </div>
+                <div class="form-group">
+                    <label>Service Required *</label>
+                    <select required>
+                        <option value="">Select a service</option>
+                        <option>Paediatric Rehabilitation</option>
+                        <option>Neurological Rehabilitation</option>
+                        <option>Community-Based Rehabilitation</option>
+                        <option>Mental Health &amp; Wellbeing</option>
+                        <option>Manual Therapy</option>
+                        <option>Preventive Medicine</option>
+                        <option>Initial Assessment / Unsure</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Medical Aid Provider</label>
+                    <select>
+                        <option>No Medical Aid (Private)</option>
+                        <option>Discovery Health</option>
+                        <option>Momentum Health</option>
+                        <option>Bonitas</option>
+                        <option>Medshield</option>
+                        <option>Government / Public</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date *</label>
+                    <input type="date" id="bookDate" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Brief Description of Your Condition</label>
+                <textarea rows="3" placeholder="Tell us briefly about your condition or reason for visiting..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Confirm Appointment Request</button>
+        </form>
+    </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div id="successModal" class="modal">
+    <div class="modal-box small">
+        <button class="modal-close" onclick="closeSuccess()">×</button>
+        <div class="success-content">
+            <div class="success-ring"><span>✓</span></div>
+            <h2>Booking Received!</h2>
+            <p>Thank you! Your appointment request has been received. We'll confirm via email within 2 hours.</p>
+            <p class="success-email" id="successEmailDisplay"></p>
+            <button class="btn-primary" onclick="closeSuccess()">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- TEAM MODAL -->
+<div id="teamModal" class="modal">
+    <div class="modal-box medium">
+        <button class="modal-close" onclick="closeTeamModal()">×</button>
+        <div id="teamModalContent"></div>
+    </div>
+</div>
+
+<!-- SERVICE DETAIL MODAL -->
+<div id="serviceModal" class="modal">
+    <div class="modal-box medium">
+        <button class="modal-close" onclick="closeServiceModal()">×</button>
+        <div id="serviceModalContent"></div>
+    </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
