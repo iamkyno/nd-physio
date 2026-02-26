@@ -53,19 +53,48 @@ document.addEventListener('keydown', e => {
 // ── FORM HANDLERS ──────────────────────────────────────────
 function handleBooking(e) {
     e.preventDefault();
-    const email = document.getElementById('bookEmail')?.value || 'your email';
-    closeBooking();
-    setTimeout(() => {
-        document.getElementById('successEmailDisplay').textContent = email;
-        openModal('successModal');
-        e.target.reset();
-    }, 300);
+    const form = e.target;
+    const formData = new FormData(form);
+    // Send booking to server-side PHP
+    fetch('send_booking.php', {
+        method: 'POST',
+        body: formData
+    }).then(res => res.json()).then(data => {
+        if (data && data.success) {
+            const email = formData.get('bookEmail') || 'your email';
+            closeBooking();
+            setTimeout(() => {
+                document.getElementById('successEmailDisplay').textContent = email;
+                openModal('successModal');
+                form.reset();
+            }, 300);
+        } else {
+            alert('Unable to send booking. Please try again or email mbhelelindo23@gmail.com');
+        }
+    }).catch(err => {
+        console.error('Booking send error', err);
+        alert('Network error — could not send booking. Please try again later.');
+    });
 }
 
 function handleContact(e) {
     e.preventDefault();
-    alert('✅ Message sent successfully!\n\nThank you for reaching out to Noxolo Duma Physiotherapy. We\'ll get back to you within 24 hours.');
-    e.target.reset();
+    const form = e.target;
+    const formData = new FormData(form);
+    fetch('send_contact.php', {
+        method: 'POST',
+        body: formData
+    }).then(res => res.json()).then(data => {
+        if (data && data.success) {
+            alert('✅ Message sent successfully!\n\nThank you for reaching out to Noxolo Duma Physiotherapy. We\'ll get back to you within 24 hours.');
+            form.reset();
+        } else {
+            alert('Unable to send message. Please try again or email mbhelelindo23@gmail.com');
+        }
+    }).catch(err => {
+        console.error('Contact send error', err);
+        alert('Network error — could not send message. Please try again later.');
+    });
 }
 
 // ── TESTIMONIALS ────────────────────────────────────────────

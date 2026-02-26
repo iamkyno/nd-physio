@@ -690,25 +690,25 @@
             </div>
             <div class="contact-form-wrap">
                 <h2>Send Us a Message</h2>
-                <form class="contact-form" onsubmit="handleContact(event)">
+                <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Full Name *</label>
-                            <input type="text" required placeholder="Your full name">
+                            <input type="text" id="contactName" name="contactName" required placeholder="Your full name">
                         </div>
                         <div class="form-group">
                             <label>Email Address *</label>
-                            <input type="email" required placeholder="your@email.com">
+                            <input type="email" id="contactEmail" name="contactEmail" required placeholder="your@email.com">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label>Phone Number</label>
-                            <input type="tel" placeholder="+27 00 000 0000">
+                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="+27 00 000 0000">
                         </div>
                         <div class="form-group">
                             <label>Subject *</label>
-                            <select required>
+                            <select id="contactSubject" name="contactSubject" required>
                                 <option value="">Select subject</option>
                                 <option>Book an Appointment</option>
                                 <option>General Enquiry</option>
@@ -723,7 +723,7 @@
                     </div>
                     <div class="form-group">
                         <label>Message *</label>
-                        <textarea required rows="5" placeholder="How can we help you?"></textarea>
+                        <textarea id="contactMessage" name="contactMessage" required rows="5" placeholder="How can we help you?"></textarea>
                     </div>
                     <button type="submit" class="btn-primary full-width">Send Message</button>
                 </form>
@@ -809,11 +809,11 @@
             <h2>📅 Book an Appointment or Enquire</h2>
             <p>Fill in the form and we'll confirm your booking or respond to your enquiry within 24 hours.</p>
         </div>
-        <form onsubmit="handleBooking(event)" class="booking-form">
+        <form id="bookingForm" onsubmit="handleBooking(event)" class="booking-form">
             <div class="form-row">
                 <div class="form-group">
                     <label>Request Type *</label>
-                    <select required>
+                    <select id="requestType" name="requestType" required>
                         <option value="">Select type</option>
                         <option>Book an Appointment</option>
                         <option>General Enquiry</option>
@@ -821,23 +821,23 @@
                 </div>
                 <div class="form-group">
                     <label>Full Name *</label>
-                    <input type="text" required placeholder="Your full name">
+                    <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label>Email Address *</label>
-                    <input type="email" id="bookEmail" required placeholder="your@email.com">
+                    <input type="email" id="bookEmail" name="bookEmail" required placeholder="your@email.com">
                 </div>
                 <div class="form-group">
                     <label>Phone Number *</label>
-                    <input type="tel" required placeholder="+27 00 000 0000">
+                    <input type="tel" id="phone" name="phone" required placeholder="+27 00 000 0000">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label>Service Required *</label>
-                    <select required>
+                    <select id="serviceRequired" name="serviceRequired" required>
                         <option value="">Select a service</option>
                         <option>Paediatric Rehabilitation</option>
                         <option>Neurological Rehabilitation</option>
@@ -855,7 +855,7 @@
                 </div>
                 <div class="form-group">
                     <label>Medical Aid Provider</label>
-                    <select>
+                    <select id="medicalAid" name="medicalAid">
                         <option>No Medical Aid (Private)</option>
                         <option>Bestmed</option>
                         <option>Bonitas</option>
@@ -878,11 +878,11 @@
             <div class="form-row">
                 <div class="form-group">
                     <label>Preferred Date *</label>
-                    <input type="date" id="bookDate" required>
+                    <input type="date" id="bookDate" name="bookDate" required>
                 </div>
                 <div class="form-group">
                     <label>Preferred Branch</label>
-                    <select>
+                    <select id="branch" name="branch">
                         <option value="">Select branch</option>
                         <option>Durban — Durdoc Centre</option>
                         <option>Pinetown — Sunnyside Wellness</option>
@@ -891,7 +891,7 @@
             </div>
             <div class="form-group">
                 <label>Brief Description of Your Condition</label>
-                <textarea rows="3" placeholder="Tell us briefly about your condition or reason for visiting..."></textarea>
+                <textarea id="description" name="description" rows="3" placeholder="Tell us briefly about your condition or reason for visiting..."></textarea>
             </div>
             <button type="submit" class="btn-primary full-width">Confirm Appointment Request</button>
         </form>
