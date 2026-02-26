@@ -131,73 +131,68 @@ const teamData = {
     noxolo: {
         name: 'Noxolo E. Duma',
         role: 'Founder & Principal Physiotherapist',
-        img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=450&fit=crop&q=80',
-        qual: 'MPH · PhD Candidate (UKZN) · HPCSA Registered',
-        tags: ['Paediatric Rehab', 'Neurology', 'Public Health', 'Research', 'Community Rehab', 'Mental Health'],
-        bio: 'Noxolo E. Duma is a registered physiotherapist, Master of Public Health (MPH) graduate, and PhD Candidate at the University of KwaZulu-Natal (UKZN), within the School of Nursing and Public Health.',
-        bio2: 'Her doctoral research is focused on developing a <em>Contextualised Evidence-Based Interprofessional Rehabilitation Model Responsive to the Needs of Children with Cerebral Palsy in KwaZulu-Natal, South Africa</em>. She has published 3 peer-reviewed works with 15+ citations and 961+ research reads, including a 2023 scoping review protocol published in <em>Systematic Reviews</em> (Springer).',
+        img: 'Noxolo-Duma-Image.jpg',
+        qual: 'BPhysio (UKZN) - MPH (2019) - PhD Candidate (UKZN) - HPCSA Registered',
+        tags: ['Neurological Rehab', 'Orthopaedics', 'Cardiothoracic', 'Public Health', 'Leadership'],
+        bio: 'Noxolo Erica Duma is the Founder and Director of Noxolo Duma Physiotherapy. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and a Master of Public Health, completed in 2019 under the supervision of the late Professor TE Madiba.',
+        bio2: 'She is currently completing her PhD under Professor KW Hlongwana and Dr NA Benjamin-Damons, reflecting her commitment to academic excellence and evidence-based practice. Her clinical experience spans ICU, orthopaedics, paediatrics, surgical and medical wards, amputation, neurology, cardiac rehab, and orthotics and prosthetics clinics.',
         specialties: [
-            'Paediatric Rehabilitation & Cerebral Palsy',
-            'Neurological Rehabilitation',
-            'Community-Based Rehabilitation (CBR)',
-            'Public Health & Preventive Medicine',
-            'Mental Health & Holistic Care',
-            'Delivery of Health Care',
-            'Evidence-Based Interprofessional Practice'
+            'Neurological rehabilitation',
+            'Orthopaedic rehabilitation (total knee and hip replacements)',
+            'Cardiothoracic rehabilitation',
+            'Community-based care and health promotion',
+            'Evidence-based practice and service delivery'
         ],
-        extra: 'View full research profile: <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" style="color:var(--teal); font-weight:600;">ResearchGate →</a>'
+        extra: 'View full research profile: <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" style="color:var(--teal); font-weight:600;">ResearchGate -&gt;</a>'
     },
-    sipho: {
-        name: 'Sipho Mthembu',
-        role: 'Senior Physiotherapist',
-        img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=450&fit=crop&q=80',
-        qual: 'BSc Hons Physiotherapy (Wits) · 10 Years Experience',
-        tags: ['Orthopaedics', 'Dry Needling', 'Post-surgical'],
-        bio: 'Sipho is a highly skilled senior physiotherapist specialising in orthopaedic conditions and post-surgical rehabilitation.',
-        bio2: 'Over 10 years, Sipho has developed deep expertise in joint replacement recovery, fracture rehabilitation, and musculoskeletal injury management. He is a certified dry needling practitioner.',
-        specialties: ['Joint replacement rehabilitation', 'Fracture and orthopaedic recovery', 'Dry needling', 'Musculoskeletal injury management', 'Pre- and post-operative physiotherapy']
+    silondile: {
+        name: 'Silondile S. Nkala',
+        role: 'Physiotherapist',
+        img: 'Silondile.jpg',
+        qual: 'BPhysio (UKZN) - MSc Physiotherapy Candidate (Wits)',
+        tags: ['Patient-Centred Care', 'Holistic Rehab', 'Evidence-Based'],
+        bio: 'Silondile Sibonile Nkala is a passionate and dedicated physiotherapist committed to delivering high-quality, patient-centred care. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and is currently registered for a Master of Physiotherapy at the University of the Witwatersrand.',
+        bio2: 'Now in her fourth year of professional practice, she focuses on restoring function, mobility, and quality of life through a supportive and empowering treatment environment. She values the diversity of patient presentations and works to ensure each patient leaves with relief and measurable progress.',
+        specialties: [
+            'Personalised rehabilitation planning',
+            'Mobility restoration and functional training',
+            'Patient motivation and education',
+            'Holistic, goal-aligned care'
+        ]
     },
-    ayanda: {
-        name: 'Ayanda Zulu',
-        role: 'Paediatric Physiotherapist',
-        img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=450&fit=crop&q=80',
-        qual: 'BSc Physiotherapy (UKZN) · 7 Years Experience',
-        tags: ['Paediatrics', 'Neurology', 'Stroke Rehab'],
-        bio: 'Ayanda brings warmth, empathy, and clinical excellence to her work in paediatric and neurological physiotherapy.',
-        bio2: 'Her gentle approach and ability to connect with patients of all ages makes her especially effective with children and adolescents. Ayanda is a certified Bobath practitioner.',
-        specialties: ['Paediatric physiotherapy', 'Stroke rehabilitation', 'Neurological movement disorders', 'Bobath therapy', 'Developmental assessment']
+    nompumelelo: {
+        name: 'Nompumelelo G. Geza',
+        role: 'Practice Manager',
+        img: 'Nompumelelo.jpg',
+        qual: 'Business Administration - Nursing Diploma - ECD and Education Certificate',
+        tags: ['Operations', 'Patient Care', 'Leadership'],
+        bio: 'Nompumelelo Gracious Geza is an accomplished and compassionate Practice Manager with a multidisciplinary foundation in healthcare and administration. Her background blends clinical insight with operational leadership, ensuring the practice runs efficiently while staying patient-centred.',
+        bio2: 'With qualifications in Business Administration, Early Childhood Development and Education, and Nursing, she creates a supportive environment for both patients and staff. She is driven by making a meaningful difference and takes pride in seeing patients recover and return with gratitude.',
+        specialties: [
+            'Practice operations and workflow',
+            'Patient experience and support',
+            'Team coordination and administration',
+            'Clinical and operational leadership'
+        ]
     },
-    palesa: {
-        name: 'Palesa Molefe',
-        role: 'Rehabilitation Specialist',
-        img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=450&fit=crop&q=80',
-        qual: 'BSc Physiotherapy (UP) · 6 Years Experience',
-        tags: ['Postural', "Women's Health", 'Chronic Pain'],
-        bio: 'Palesa specialises in postural correction and women\'s health physiotherapy, helping patients address the root causes of chronic pain.',
-        bio2: 'Her expertise covers antenatal and postnatal physiotherapy, pelvic floor rehabilitation, and ergonomic assessments for office workers.',
-        specialties: ['Postural assessment and correction', 'Pelvic floor rehabilitation', 'Antenatal and postnatal physiotherapy', 'Ergonomic assessment', 'Chronic pain management']
-    },
-    thabo: {
-        name: 'Thabo Nkosi',
-        role: 'Sports Physiotherapist',
-        img: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=450&fit=crop&q=80',
-        qual: 'BSc Hons Sports Science (TUT) · 8 Years Experience',
-        tags: ['Sports Injuries', 'Biomechanics', 'Conditioning'],
-        bio: 'Thabo is our dedicated sports physiotherapist working with amateur and professional athletes across multiple disciplines.',
-        bio2: 'His biomechanical analysis expertise helps identify root causes of recurring injuries and optimise athletic performance.',
-        specialties: ['Acute sports injury management', 'Biomechanical and gait analysis', 'Return-to-sport rehabilitation', 'Injury prevention programmes', 'Strength and conditioning guidance']
-    },
-    zanele: {
-        name: 'Zanele Dlamini',
-        role: 'Practice Manager & Physiotherapist',
-        img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=450&fit=crop&q=80',
-        qual: 'BSc Physiotherapy (Rhodes) · 9 Years Experience',
-        tags: ['Geriatrics', 'Chronic Pain', 'Practice Management'],
-        bio: 'Zanele manages both the clinical and operational aspects of the practice, ensuring every patient has a seamless experience.',
-        bio2: 'Clinically, she specialises in geriatric physiotherapy and chronic pain management, with particular skill in working with older patients.',
-        specialties: ['Geriatric rehabilitation', 'Fall prevention programmes', 'Chronic pain management', 'Balance and vestibular rehabilitation', 'Patient relations and coordination']
+    khanyiswa: {
+        name: 'Khanyiswa M. Ndziweni',
+        role: 'Administrator',
+        img: 'Khanyiswa.jpg',
+        qual: 'Computer Certificate - Aviation Certificate (Skyy Aviation Academy)',
+        tags: ['Front Desk', 'Patient Support', 'Administration'],
+        bio: 'Khanyiswa Miranda Ndziweni is a driven and hardworking medical secretary with strong communication skills and attention to detail. She plays a key role in day-to-day operations while creating a welcoming and professional environment for patients.',
+        bio2: 'Her experience in customer engagement and her technical training allow her to provide efficient, reliable support to both patients and the team. Her ambition and versatility are reflected in her aviation studies and commitment to continuous growth.',
+        specialties: [
+            'Patient reception and coordination',
+            'Administrative and technical support',
+            'Communication and scheduling',
+            'Customer engagement'
+        ]
     }
 };
+
+
 
 function openTeamModal(key) {
     const d = teamData[key];
@@ -219,7 +214,7 @@ function openTeamModal(key) {
             <h4 style="margin:1.5rem 0 .8rem;color:var(--teal-dark)">Areas of Specialisation</h4>
             <ul class="tm-list">${d.specialties.map(s => `<li>${s}</li>`).join('')}</ul>
             <button class="btn-primary full-width" onclick="closeTeamModal();openBooking();">
-                Book with ${d.name.split(' ')[0]}
+                Book with your appointment
             </button>
         </div>`;
     openModal('teamModal');
