@@ -675,7 +675,13 @@ a  { text-decoration: none; color: inherit; }
 .team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--lime); }
 
 .team-img-wrap { position: relative; height: 280px; overflow: hidden; }
-.team-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.team-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+    object-position: 0px -40px;
+}
 .team-card:hover .team-img-wrap img { transform: scale(1.05); }
 
 .team-overlay {
