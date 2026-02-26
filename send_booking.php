@@ -17,9 +17,17 @@ $medicalAid  = val('medicalAid');
 $bookDate    = val('bookDate');
 $branch      = val('branch');
 $description = val('description');
+$consent     = val('consent');
+
+$remoteIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$consentTime = date('c');
 
 if (!$fullName || !$bookEmail) {
     echo json_encode(['success' => false, 'error' => 'missing_fields']);
+    exit;
+}
+if (strtolower($consent) !== 'yes') {
+    echo json_encode(['success' => false, 'error' => 'consent_required']);
     exit;
 }
 
@@ -36,6 +44,10 @@ $body .= "Preferred Date: " . $bookDate . "\n";
 $body .= "Preferred Branch: " . $branch . "\n\n";
 $body .= "Description:\n" . $description . "\n\n";
 $body .= "Sent from: " . ($_SERVER['HTTP_HOST'] ?? 'website') . "\n";
+
+$body .= "Consent: " . ($consent ? $consent : 'no') . "\n";
+$body .= "Consent Timestamp: " . $consentTime . "\n";
+$body .= "Sender IP: " . $remoteIp . "\n";
 
 // SMTP / PHPMailer configuration
 // Set the following environment variables in your Laragon or server environment

@@ -10,9 +10,17 @@ $email = val('contactEmail');
 $phone = val('contactPhone');
 $subjectField = val('contactSubject');
 $message = val('contactMessage');
+$consent = val('consent');
+
+$remoteIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+$consentTime = date('c');
 
 if (!$name || !$email || !$message) {
     echo json_encode(['success' => false, 'error' => 'missing_fields']);
+    exit;
+}
+if (strtolower($consent) !== 'yes') {
+    echo json_encode(['success' => false, 'error' => 'consent_required']);
     exit;
 }
 
@@ -25,6 +33,10 @@ $body .= "Phone: " . $phone . "\n";
 $body .= "Subject: " . $subjectField . "\n\n";
 $body .= "Message:\n" . $message . "\n\n";
 $body .= "Sent from: " . ($_SERVER['HTTP_HOST'] ?? 'website') . "\n";
+
+$body .= "Consent: " . ($consent ? $consent : 'no') . "\n";
+$body .= "Consent Timestamp: " . $consentTime . "\n";
+$body .= "Sender IP: " . $remoteIp . "\n";
 
 $use_smtp = true;
 $smtpHost = getenv('SMTP_HOST') ?: 'smtp.example.com';

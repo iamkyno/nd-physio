@@ -293,6 +293,42 @@ const serviceData = {
         treats: ['Workplace ergonomic assessment', 'Injury prevention screening', 'Postural health programmes', 'Active ageing and fall prevention', 'Health education and lifestyle counselling'],
         duration: '45–60 min', sessions: 'Ongoing as needed'
     }
+    ,
+    ortho: {
+        icon: '🦴', title: 'Orthopaedic Rehabilitation',
+        img: 'Orthopaedic-Rehabilitation-Image.jpg',
+        intro: 'Specialist rehabilitation following orthopaedic surgery and musculoskeletal injury — focused on restoring strength, mobility and return-to-function through progressive loading and tailored exercise.',
+        treats: ['Total knee and hip replacement rehab', 'Post-operative mobilisation and strengthening', 'Soft-tissue injury rehab', 'Tendon and ligament recovery', 'Post-fracture rehabilitation'],
+        duration: '45–60 min', sessions: '4–12 sessions (individualised)'
+    },
+    electro: {
+        icon: '⚡', title: 'Electrotherapy',
+        img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=320&fit=crop&q=80',
+        intro: 'Targeted electrotherapy modalities to reduce pain, modulate neuromuscular activity and accelerate tissue healing as part of a broader physiotherapy plan.',
+        treats: ['TENS for pain relief', 'Interferential therapy', 'Shockwave therapy', 'Neuromuscular stimulation', 'Post-operative analgesia support'],
+        duration: '30–45 min', sessions: 'Often used adjunctively across course of care'
+    },
+    respiratory: {
+        icon: '🫁', title: 'Respiratory Physiotherapy',
+        img: 'https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&h=320&fit=crop&q=80',
+        intro: 'Assessment and treatment to improve ventilation, airway clearance and functional respiratory capacity — helpful for chronic and acute respiratory conditions.',
+        treats: ['COPD management', 'Post-operative chest physiotherapy', 'Bronchiectasis and secretion clearance', 'Breathing retraining', 'Pulmonary rehabilitation'],
+        duration: '45–60 min', sessions: 'Programme-based / ongoing'
+    },
+    dryneedling: {
+        icon: '💉', title: 'Dry Needling (IMS)',
+        img: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=320&fit=crop&q=80',
+        intro: 'Intramuscular stimulation (dry needling) to release myofascial trigger points, reduce pain and improve local tissue perfusion as part of an integrated treatment plan.',
+        treats: ['Myofascial pain', 'Trigger point release', 'Chronic muscular tightness', 'Refractory soft-tissue pain', 'Enhanced rehabilitation response'],
+        duration: '20–40 min', sessions: '1–6 sessions depending on response'
+    },
+    jointmob: {
+        icon: '🔄', title: 'Joint Mobilisation & Soft Tissue',
+        img: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=320&fit=crop&q=80',
+        intro: 'Hands-on joint mobilisation and soft tissue techniques to improve range of motion, reduce stiffness and restore comfortable movement patterns.',
+        treats: ['Joint stiffness and hypomobility', 'Post-traumatic mobility loss', 'Soft tissue adhesions', 'Capsular restrictions', 'Pre- and post-operative mobilisation'],
+        duration: '30–60 min', sessions: '3–8 sessions typically'
+    }
 };
 
 function openServiceDetail(key) {

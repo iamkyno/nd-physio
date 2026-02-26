@@ -59,8 +59,8 @@ a  { text-decoration: none; color: inherit; }
 .btn-primary:hover { background: var(--lime-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(141,198,63,.35); }
 
 .btn-outline {
-    background: transparent;
-    color: var(--teal);
+    background: #000000c4;
+    color: #ffffff;
     border: 2px solid var(--teal);
     padding: 0.85rem 2rem;
     border-radius: 50px;
@@ -607,6 +607,17 @@ a  { text-decoration: none; color: inherit; }
 .value-icon { font-size: 2.5rem; margin-bottom: 1rem; }
 .value-card h3 { margin-bottom: 0.6rem; font-size: 1.1rem; }
 .value-card p { font-size: 0.9rem; }
+
+/* ── Terms and Privacy ─────────────────────────────────── */
+
+main.content.terms-privacy {
+    padding: 40px;
+}
+
+main.content.terms-privacy h2 {
+    font-size: 27px;
+    padding: 20px 0;
+}
 
 /* ── ACCREDITATIONS ───────────────────────────────── */
 .accred-grid {
