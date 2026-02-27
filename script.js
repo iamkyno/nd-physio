@@ -288,10 +288,10 @@ const serviceData = {
     },
     respiratory: {
         icon: '🫁', title: 'Respiratory Physiotherapy',
-        img: 'https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&h=320&fit=crop&q=80',
+        img: 'Respiratory-Physiotherapy-Image.webp',
         intro: '',
-        treats: ['COPD management', 'Post-operative chest physiotherapy', 'Bronchiectasis and secretion clearance', 'Breathing retraining', 'Pulmonary rehabilitation'],
-        duration: '45–60 min', sessions: 'Programme-based / ongoing'
+        treats: ['COPD', 'Asthma', 'Bronchitis', 'Pneumonia'],
+        duration: '30 min', sessions: 'Programme-based / ongoing'
     },
     dryneedling: {
         icon: '💉', title: 'Dry Needling (IMS)',
