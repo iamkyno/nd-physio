@@ -159,35 +159,22 @@ function revealItems() {
 const teamData = {
     noxolo: {
         name: 'Noxolo E. Duma',
-        role: 'Founder & Principal Physiotherapist',
-        img: 'Noxolo-Duma-Image.jpg',
-        qual: 'BPhysio (UKZN) - MPH (2019) - PhD Candidate (UKZN) - HPCSA Registered',
+        role: 'Founder & Physiotherapist',
+        img: 'Noxolo-Duma-Team-Image.webp',
+        qual: 'Founder · Director · PhD Candidate · UKZN',
         tags: ['Neurological Rehab', 'Orthopaedics', 'Cardiothoracic', 'Public Health', 'Leadership'],
         bio: 'Noxolo Erica Duma is the Founder and Director of Noxolo Duma Physiotherapy. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and a Master of Public Health, completed in 2019 under the supervision of the late Professor TE Madiba.',
         bio2: 'She is currently completing her PhD under Professor KW Hlongwana and Dr NA Benjamin-Damons, reflecting her commitment to academic excellence and evidence-based practice. Her clinical experience spans ICU, orthopaedics, paediatrics, surgical and medical wards, amputation, neurology, cardiac rehab, and orthotics and prosthetics clinics.',
-        specialties: [
-            'Neurological rehabilitation',
-            'Orthopaedic rehabilitation (total knee and hip replacements)',
-            'Cardiothoracic rehabilitation',
-            'Community-based care and health promotion',
-            'Evidence-based practice and service delivery'
-        ],
         extra: 'View full research profile: <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" style="color:var(--teal); font-weight:600;">ResearchGate -&gt;</a>'
     },
     silondile: {
         name: 'Silondile S. Nkala',
         role: 'Physiotherapist',
-        img: 'Silondile.jpg',
-        qual: 'BPhysio (UKZN) - MSc Physiotherapy Candidate (Wits)',
+        img: 'Silondile-Team-Image.webp',
+        qual: 'MSc Physio candidate (WITS) - B. Physio (UKZN)',
         tags: ['Patient-Centred Care', 'Holistic Rehab', 'Evidence-Based'],
         bio: 'Silondile Sibonile Nkala is a passionate and dedicated physiotherapist committed to delivering high-quality, patient-centred care. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and is currently registered for a Master of Physiotherapy at the University of the Witwatersrand.',
-        bio2: 'Now in her fourth year of professional practice, she focuses on restoring function, mobility, and quality of life through a supportive and empowering treatment environment. She values the diversity of patient presentations and works to ensure each patient leaves with relief and measurable progress.',
-        specialties: [
-            'Personalised rehabilitation planning',
-            'Mobility restoration and functional training',
-            'Patient motivation and education',
-            'Holistic, goal-aligned care'
-        ]
+        bio2: 'Now in her fourth year of professional practice, she focuses on restoring function, mobility, and quality of life through a supportive and empowering treatment environment. She values the diversity of patient presentations and works to ensure each patient leaves with relief and measurable progress.'
     },
     nompumelelo: {
         name: 'Nompumelelo G. Geza',
@@ -196,13 +183,7 @@ const teamData = {
         qual: 'Business Administration - Nursing Diploma - ECD and Education Certificate',
         tags: ['Operations', 'Patient Care', 'Leadership'],
         bio: 'Nompumelelo Gracious Geza is an accomplished and compassionate Practice Manager with a multidisciplinary foundation in healthcare and administration. Her background blends clinical insight with operational leadership, ensuring the practice runs efficiently while staying patient-centred.',
-        bio2: 'With qualifications in Business Administration, Early Childhood Development and Education, and Nursing, she creates a supportive environment for both patients and staff. She is driven by making a meaningful difference and takes pride in seeing patients recover and return with gratitude.',
-        specialties: [
-            'Practice operations and workflow',
-            'Patient experience and support',
-            'Team coordination and administration',
-            'Clinical and operational leadership'
-        ]
+        bio2: 'With qualifications in Business Administration, Early Childhood Development and Education, and Nursing, she creates a supportive environment for both patients and staff. She is driven by making a meaningful difference and takes pride in seeing patients recover and return with gratitude.'
     },
     khanyiswa: {
         name: 'Khanyiswa M. Ndziweni',
@@ -211,13 +192,7 @@ const teamData = {
         qual: 'Computer Certificate - Aviation Certificate (Skyy Aviation Academy)',
         tags: ['Front Desk', 'Patient Support', 'Administration'],
         bio: 'Khanyiswa Miranda Ndziweni is a driven and hardworking medical secretary with strong communication skills and attention to detail. She plays a key role in day-to-day operations while creating a welcoming and professional environment for patients.',
-        bio2: 'Her experience in customer engagement and her technical training allow her to provide efficient, reliable support to both patients and the team. Her ambition and versatility are reflected in her aviation studies and commitment to continuous growth.',
-        specialties: [
-            'Patient reception and coordination',
-            'Administrative and technical support',
-            'Communication and scheduling',
-            'Customer engagement'
-        ]
+        bio2: 'Her experience in customer engagement and her technical training allow her to provide efficient, reliable support to both patients and the team. Her ambition and versatility are reflected in her aviation studies and commitment to continuous growth.'
     }
 };
 
@@ -240,8 +215,6 @@ function openTeamModal(key) {
             <p>${d.bio}</p>
             <p>${d.bio2}</p>
             ${d.extra ? `<p style="margin-top:.5rem;">${d.extra}</p>` : ''}
-            <h4 style="margin:1.5rem 0 .8rem;color:var(--teal-dark)">Areas of Specialisation</h4>
-            <ul class="tm-list">${d.specialties.map(s => `<li>${s}</li>`).join('')}</ul>
             <button class="btn-primary full-width" onclick="closeTeamModal();openBooking();">
                 Book with your appointment
             </button>
@@ -295,15 +268,15 @@ const serviceData = {
     },
     dryneedling: {
         icon: '💉', title: 'Dry Needling (IMS)',
-        img: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=320&fit=crop&q=80',
-        intro: 'Intramuscular stimulation (dry needling) to release myofascial trigger points, reduce pain and improve local tissue perfusion as part of an integrated treatment plan.',
+        img: 'Dry-Needling-Image.webp',
+        intro: 'This technique involves the insertion of needles into myofascial trigger points. It reduces pain, increases blood flow, and restores optimal nerve function. It relaxes tight muscles.',
         treats: ['Myofascial pain', 'Trigger point release', 'Chronic muscular tightness', 'Refractory soft-tissue pain', 'Enhanced rehabilitation response'],
         duration: '20–40 min', sessions: '1–6 sessions depending on response'
     },
     jointmob: {
         icon: '🔄', title: 'Joint Mobilisation & Soft Tissue',
-        img: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=320&fit=crop&q=80',
-        intro: 'Hands-on joint mobilisation and soft tissue techniques to improve range of motion, reduce stiffness and restore comfortable movement patterns.',
+        img: 'Joint-Mobilisation-Image.webp',
+        intro: '',
         treats: ['Joint stiffness and hypomobility', 'Post-traumatic mobility loss', 'Soft tissue adhesions', 'Capsular restrictions', 'Pre- and post-operative mobilisation'],
         duration: '30–60 min', sessions: '3–8 sessions typically'
     }
