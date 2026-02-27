@@ -163,27 +163,27 @@ const teamData = {
         img: 'Noxolo-Duma-Team-Image.webp',
         qual: 'Founder · Director · PhD Candidate · UKZN',
         tags: ['Neurological Rehab', 'Orthopaedics', 'Cardiothoracic', 'Public Health', 'Leadership'],
-        bio: 'Noxolo Erica Duma is the Founder and Director of Noxolo Duma Physiotherapy. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and a Master of Public Health, completed in 2019 under the supervision of the late Professor TE Madiba.',
-        bio2: 'She is currently completing her PhD under Professor KW Hlongwana and Dr NA Benjamin-Damons, reflecting her commitment to academic excellence and evidence-based practice. Her clinical experience spans ICU, orthopaedics, paediatrics, surgical and medical wards, amputation, neurology, cardiac rehab, and orthotics and prosthetics clinics.',
-        extra: 'View full research profile: <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" style="color:var(--teal); font-weight:600;">ResearchGate -&gt;</a>'
+        bio: 'Noxolo Erica Duma is the Founder and Director of Noxolo Duma Physiotherapy. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and a Master\'s in Public Health, completed in 2019 under the supervision of the late Professor TE Madiba. She is currently completing her Doctor of Philosophy (PhD) under the supervision of Professor KW Hlongwana and Dr NA Benjamin-Damons, reflecting her strong commitment to academic excellence and evidence-based practice.',
+        bio2: 'Noxolo completed her community service at Christ The King Hospital in Ixopo in 2014, where she developed a strong foundation in outreach programmes, health promotion, and community-based care. In 2015, she joined Addington Hospital, gaining extensive experience across Intensive Care Units, Orthopaedics, Paediatrics, Surgical and Medical wards, as well as amputation, neurology, cardiac rehabilitation, and orthotics and prosthetics clinics. These diverse rotations strengthened her clinical expertise and shaped her holistic approach to patient care.',
+        extra: 'Her exposure to community health initiatives inspired her transition from individual patient management to a broader public health perspective, motivating her pursuit of advanced studies in Public Health to better understand and improve healthcare service delivery at a systems level. Noxolo established her private practice in 2017 while still serving in the public sector and later transitioned fully into private practice to focus on expanding quality physiotherapy services. Her special interests include neurological rehabilitation, orthopaedics particularly total knee and hip replacements and cardiothoracic rehabilitation. Outside of her professional life, Noxolo enjoys reading research literature, exploring new destinations with her family, and has a unique fascination with lions and tigers. Her blend of clinical expertise and visionary leadership continues to shape the growth and impact of her practice. <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" style="color:var(--teal); font-weight:600;">View research profile on ResearchGate →</a>'
     },
     silondile: {
         name: 'Silondile S. Nkala',
         role: 'Physiotherapist',
         img: 'Silondile-Team-Image.webp',
-        qual: 'MSc Physio candidate (WITS) - B. Physio (UKZN)',
+        qual: 'MSc Physio candidate (WITS); B. Physio (UKZN)',
         tags: ['Patient-Centred Care', 'Holistic Rehab', 'Evidence-Based'],
-        bio: 'Silondile Sibonile Nkala is a passionate and dedicated physiotherapist committed to delivering high-quality, patient-centred care. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal and is currently registered for a Master of Physiotherapy at the University of the Witwatersrand.',
-        bio2: 'Now in her fourth year of professional practice, she focuses on restoring function, mobility, and quality of life through a supportive and empowering treatment environment. She values the diversity of patient presentations and works to ensure each patient leaves with relief and measurable progress.'
+        bio: 'Silondile Sibonile Nkala is a passionate and dedicated Physiotherapist committed to delivering high-quality, patient-centred care. She holds a Bachelor of Physiotherapy from the University of KwaZulu-Natal. Now in her fourth year of professional practice, she continues to expand her clinical expertise and professional development. She is currently registered for a Master\'s in Physiotherapy at the University of the Witwatersrand, further strengthening her knowledge and commitment to evidence-based practice.',
+        bio2: 'Silondile is driven by a genuine desire to help individuals regain function, restore mobility, and improve their overall quality of life. She takes pride in creating a supportive, encouraging, and empowering treatment environment where patients feel heard, understood, and motivated throughout their recovery journey. Her approach is holistic and tailored, ensuring that each patient receives personalised care aligned with their unique goals and needs. She enjoys treating a wide variety of physiotherapy conditions and values the diversity that comes with working across different patient presentations. For Silondile, every case is important. Her primary goal during each session is to ensure patients leave feeling relief, measurable improvement, and renewed hope. Witnessing her patients progress whether through reduced pain, improved strength, restored mobility, or achieving meaningful milestones is the most rewarding aspect of her work. Beyond her clinical role, Silondile is warm, approachable, and values personal growth. She enjoys reading novels and immersing herself in compelling stories, and she is known for her fun-loving nature and love of laughter. Her balance of professionalism, compassion, and enthusiasm makes her a trusted and valued member of the practice.'
     },
     nompumelelo: {
         name: 'Nompumelelo G. Geza',
         role: 'Practice Manager',
         img: 'Nompumelelo.jpg',
-        qual: 'Business Administration - Nursing Diploma - ECD and Education Certificate',
+        qual: 'Diploma in Nursing; Business Administration; ECD',
         tags: ['Operations', 'Patient Care', 'Leadership'],
-        bio: 'Nompumelelo Gracious Geza is an accomplished and compassionate Practice Manager with a multidisciplinary foundation in healthcare and administration. Her background blends clinical insight with operational leadership, ensuring the practice runs efficiently while staying patient-centred.',
-        bio2: 'With qualifications in Business Administration, Early Childhood Development and Education, and Nursing, she creates a supportive environment for both patients and staff. She is driven by making a meaningful difference and takes pride in seeing patients recover and return with gratitude.'
+        bio: 'Nompumelelo Gracious Geza is an accomplished and compassionate Practice Manager with a strong multidisciplinary foundation in healthcare and administration. She holds qualifications in Business Administration, a Certificate in Early Childhood Development (ECD) and Education, and a Diploma in Nursing, equipping her with a well-rounded skill set that bridges clinical expertise, operational leadership, and patient-centered care.',
+        bio2: 'With a natural warmth and welcoming presence, Nompumelelo is deeply committed to creating a supportive and efficient healthcare environment where both patients and staff feel valued. Her background in nursing gives her a genuine understanding of patient needs, while her training in business administration enables her to lead with structure, strategy, and operational excellence. This unique combination allows her to manage practice operations effectively while maintaining a compassionate, human-centered approach. She is passionate about making a meaningful difference in the lives of others. For Nompumelelo, the most rewarding part of her role is witnessing patients recover and return with gratitude and renewed smiles. Knowing that her leadership contributes to positive health outcomes and uplifting experiences is what makes the hard work worthwhile. Driven, loving, and dedicated, she approaches her work with integrity, empathy, and a strong sense of purpose. Outside of her professional responsibilities, Nompumelelo is a proud tea enthusiast — a self-proclaimed tea connoisseur who enjoys discovering and savoring new blends whenever she gets the chance.'
     },
     khanyiswa: {
         name: 'Khanyiswa M. Ndziweni',
@@ -191,8 +191,8 @@ const teamData = {
         img: 'Khanyiswa.jpg',
         qual: 'Computer Certificate - Aviation Certificate (Skyy Aviation Academy)',
         tags: ['Front Desk', 'Patient Support', 'Administration'],
-        bio: 'Khanyiswa Miranda Ndziweni is a driven and hardworking medical secretary with strong communication skills and attention to detail. She plays a key role in day-to-day operations while creating a welcoming and professional environment for patients.',
-        bio2: 'Her experience in customer engagement and her technical training allow her to provide efficient, reliable support to both patients and the team. Her ambition and versatility are reflected in her aviation studies and commitment to continuous growth.'
+        bio: 'Khanyiswa Miranda Ndziweni is a driven and hardworking Medical Secretary. With a strong passion for excellence and a natural ability to connect with people, she plays a key role in ensuring smooth day-to-day operations while creating a welcoming and professional environment for patients.',
+        bio2: 'With experience in customer engagement, Khanyiswa brings strong communication skills, efficiency, and attention to detail to her role. She holds a Computer Certificate equipping her with essential administrative and technical skills, as well as an Aviation Certificate from Skyy Aviation Academy a testament to her ambition, versatility, and commitment to continuous growth. Khanyiswa approaches her work with enthusiasm and professionalism, And she provides exceptional support to both patients and the team. Khanyiswa can recite the entire script of her favourite movie, a reflection of her vibrant personality and impressive memory.'
     }
 };
 
@@ -208,7 +208,6 @@ function openTeamModal(key) {
                 <h2>${d.name}</h2>
                 <span class="team-role">${d.role}</span>
                 <p style="font-size:.85rem;color:var(--grey);margin:.4rem 0">${d.qual}</p>
-                <div class="tm-tags">${d.tags.map(t => `<span>${t}</span>`).join('')}</div>
             </div>
         </div>
         <div class="tm-body">
