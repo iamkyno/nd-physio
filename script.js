@@ -267,19 +267,11 @@ const serviceData = {
     },
     manual: {
         icon: '🤲', title: 'Manual Therapy',
-        img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=320&fit=crop&q=80',
+        img: 'Silondile-Manual-Therapy-Image.webp',
         intro: 'Hands-on physiotherapy using mobilisation, manipulation, and soft tissue techniques to reduce pain, restore joint mobility, and improve functional movement patterns.',
         treats: ['Acute and chronic back pain', 'Neck pain and stiffness', 'Headaches of cervical origin', 'Hip and shoulder conditions', 'Post-injury joint stiffness'],
         duration: '45–60 min', sessions: '4–8 sessions recommended'
     },
-    preventive: {
-        icon: '🛡️', title: 'Preventive Medicine & Health Promotion',
-        img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=320&fit=crop&q=80',
-        intro: 'Proactive physiotherapy programmes designed to prevent injury, reduce disability risk, and promote optimal health — tailored to your lifestyle, occupation, and individual health profile.',
-        treats: ['Workplace ergonomic assessment', 'Injury prevention screening', 'Postural health programmes', 'Active ageing and fall prevention', 'Health education and lifestyle counselling'],
-        duration: '45–60 min', sessions: 'Ongoing as needed'
-    }
-    ,
     ortho: {
         icon: '🦴', title: 'Orthopaedic Rehabilitation',
         img: 'Orthopaedic-Rehabilitation-Image.jpg',

@@ -138,13 +138,13 @@
             <div class="service-card" onclick="showPage('services')">
                 <div class="service-icon-wrap"><span>👶</span></div>
                 <h3>Paediatric Rehabilitation</h3>
-                <p>Physiotherapy for children, including those with Cerebral Palsy, developmental delays, and paediatric neurological conditions. Physiotherapy for children with neurological conditions such as cerebral palsy, developmental delays, general paediatric rehabilitation for fractures and injuries</p>
+                <p>Physiotherapy for children with neurological conditions such as cerebral palsy, developmental delays, general paediatric rehabilitation for fractures and injuries</p>
                 <span class="card-arrow">→</span>
             </div>
             <div class="service-card featured" onclick="showPage('services')">
                 <div class="service-icon-wrap"><span>🧠</span></div>
                 <h3>Neurological Rehabilitation</h3>
-                <p>Assessment and treatment of neurological conditions affecting movement, balance, and functional independence. Evidence-based approaches for stroke, brain injury, Parkinson's, and more. Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.</p>
+                <p>Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.</p>
                 <span class="card-arrow">→</span>
             </div>
             <div class="service-card" onclick="showPage('services')">
@@ -341,7 +341,7 @@
                 </div>
             </div>
             <div class="centered-btn" style="margin-top:2rem;">
-                <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" class="btn-outline-dark">View Full Research Profile on ResearchGate →</a>
+                <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" rel="noopener" class="btn-outline-dark">View Full Research Profile on ResearchGate →</a>
             </div>
         </div>
     </section>
@@ -416,20 +416,11 @@
                 </div>
             </div>
             <div class="service-full-card" onclick="openServiceDetail('manual')">
-                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=350&fit=crop&q=80" alt="Manual Therapy"></div>
+                <div class="sfc-img"><img src="Silondile-Manual-Therapy-Image.webp" alt="Manual Therapy"></div>
                 <div class="sfc-body">
                     <div class="sfc-icon">🤲</div>
                     <h3>Manual Therapy</h3>
                     <p>Hands-on physiotherapy techniques — mobilisation, manipulation, soft tissue release — to reduce pain and restore optimal movement and function.</p>
-                    <button class="btn-small">Learn More →</button>
-                </div>
-            </div>
-            <div class="service-full-card" onclick="openServiceDetail('preventive')">
-                <div class="sfc-img"><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=350&fit=crop&q=80" alt="Preventive Care"></div>
-                <div class="sfc-body">
-                    <div class="sfc-icon">🛡️</div>
-                    <h3>Preventive Medicine &amp; Health Promotion</h3>
-                    <p>Proactive physiotherapy programmes to prevent injury and disability before they occur — personalised to your lifestyle, occupation, and health profile.</p>
                     <button class="btn-small">Learn More →</button>
                 </div>
             </div>
@@ -652,17 +643,7 @@
                         </div>
                         <div class="form-group">
                             <label>Subject *</label>
-                            <select id="contactSubject" name="contactSubject" required>
-                                <option value="">Select subject</option>
-                                <option>Book an Appointment</option>
-                                <option>General Enquiry</option>
-                                <option>Paediatric Rehab Enquiry</option>
-                                <option>Neurological Rehab Enquiry</option>
-                                <option>Orthopaedic Rehab Enquiry</option>
-                                <option>Research Collaboration</option>
-                                <option>Medical Aid Query</option>
-                                <option>Careers</option>
-                            </select>
+                            <input type="text" id="contactSubject" name="contactSubject" required placeholder="What is your inquiry about?">
                         </div>
                     </div>
                     <div class="form-group">
@@ -713,14 +694,10 @@
                 <ul>
                     <li><a href="#" onclick="showPage('services')">Paediatric Rehabilitation</a></li>
                     <li><a href="#" onclick="showPage('services')">Neurological Rehabilitation</a></li>
-                    <li><a href="#" onclick="showPage('services')">Community-Based Rehab</a></li>
                     <li><a href="#" onclick="showPage('services')">Orthopaedic Rehabilitation</a></li>
-                    <li><a href="#" onclick="showPage('services')">Manual Therapy &amp; Joint Mobilisation</a></li>
                     <li><a href="#" onclick="showPage('services')">Electrotherapy</a></li>
                     <li><a href="#" onclick="showPage('services')">Respiratory Physiotherapy</a></li>
                     <li><a href="#" onclick="showPage('services')">Dry Needling</a></li>
-                    <li><a href="#" onclick="showPage('services')">Mental Health &amp; Wellbeing</a></li>
-                    <li><a href="#" onclick="showPage('services')">Preventive Medicine</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -786,42 +763,15 @@
             <div class="form-row">
                 <div class="form-group">
                     <label>Service Required *</label>
-                    <select id="serviceRequired" name="serviceRequired" required>
-                        <option value="">Select a service</option>
-                        <option>Paediatric Rehabilitation</option>
-                        <option>Neurological Rehabilitation</option>
-                        <option>Community-Based Rehabilitation</option>
-                        <option>Orthopaedic Rehabilitation</option>
-                        <option>Mental Health &amp; Wellbeing</option>
-                        <option>Manual Therapy</option>
-                        <option>Electrotherapy</option>
-                        <option>Respiratory Physiotherapy</option>
-                        <option>Dry Needling</option>
-                        <option>Joint Mobilisation &amp; Soft Tissue</option>
-                        <option>Preventive Medicine &amp; Health Promotion</option>
-                        <option>Initial Assessment / Unsure</option>
-                    </select>
+                    <input type="text" id="serviceRequired" name="serviceRequired" required placeholder="E.g. Paediatric Rehabilitation, Neurological Rehab, etc.">
                 </div>
                 <div class="form-group">
                     <label>Medical Aid Provider</label>
-                    <select id="medicalAid" name="medicalAid">
-                        <option>No Medical Aid (Private)</option>
-                        <option>Bestmed</option>
-                        <option>Bonitas</option>
-                        <option>Discovery Health</option>
-                        <option>Fedhealth</option>
-                        <option>Gems</option>
-                        <option>Keyhealth</option>
-                        <option>Liberty Medical Scheme</option>
-                        <option>Medihelp</option>
-                        <option>Medshield</option>
-                        <option>Momentum Health</option>
-                        <option>Polmed</option>
-                        <option>Profmed</option>
-                        <option>Sizwe / Hosmed</option>
-                        <option>Government / Public</option>
-                        <option>Other</option>
-                    </select>
+                    <input type="text" id="medicalAid" name="medicalAid" placeholder="E.g. Bestmed, Discovery Health, etc.">
+                </div>
+                <div class="form-group">
+                    <label>Medical Aid Option</label>
+                    <input type="text" id="medicalAidOption" name="medicalAidOption" placeholder="E.g. Polmed, Profmed, Sizwe / Hosmed, Government / Public, Other">
                 </div>
             </div>
             <div class="form-row">
