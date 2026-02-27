@@ -253,31 +253,17 @@ function openTeamModal(key) {
 const serviceData = {
     paeds: {
         icon: '👶', title: 'Paediatric Rehabilitation',
-        img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=320&fit=crop&q=80',
-        intro: 'Our paediatric rehabilitation service is directly informed by Noxolo Duma\'s published research on physiotherapy management of children with Cerebral Palsy in low- and middle-income countries. We provide specialist, evidence-based care for children with a range of physical and neurological conditions.',
+        img: 'Noxolo-Duma-With-Baby.webp',
+        intro: '',
         treats: ['Cerebral Palsy (all GMFCS levels)', 'Developmental delays and motor dysfunction', 'Paediatric neurological conditions', 'Musculoskeletal conditions in children', 'Post-surgical paediatric rehabilitation'],
         duration: '45–60 min', sessions: 'Individualised programme'
     },
     neuro: {
         icon: '🧠', title: 'Neurological Rehabilitation',
         img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=320&fit=crop&q=80',
-        intro: 'Evidence-based neurological physiotherapy for patients recovering from or managing neurological conditions. Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.',
-        treats: ['Stroke and hemiplegia recovery', 'Parkinson\'s disease management', 'Multiple sclerosis', 'Brain injury rehabilitation', 'Balance and coordination disorders'],
+        intro: 'Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.',
+        treats: ['Stroke', '⁠Traumatic brain injury', 'Balance and co-ordination disorders', 'Spinal cord injuries'],
         duration: '60 min', sessions: 'Long-term ongoing programme'
-    },
-    community: {
-        icon: '🏘️', title: 'Community-Based Rehabilitation',
-        img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=320&fit=crop&q=80',
-        intro: 'Contextually relevant rehabilitation delivered within community settings — making quality physiotherapy accessible to patients across KwaZulu-Natal, aligned with South African public health priorities.',
-        treats: ['Home-based rehabilitation', 'School-based physiotherapy support', 'Community disability programmes', 'Family and caregiver training', 'Health promotion and education'],
-        duration: 'Varies', sessions: 'Programme-based'
-    },
-    mental: {
-        icon: '🧘', title: 'Mental Health & Wellbeing',
-        img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=320&fit=crop&q=80',
-        intro: 'Physiotherapy that recognises the strong link between physical health and mental wellbeing. Holistic programmes that address both body and mind for improved overall health outcomes.',
-        treats: ['Chronic pain and psychosocial impact', 'Anxiety and movement rehabilitation', 'Stress-related musculoskeletal conditions', 'Mind-body wellness programmes', 'Rehabilitation psychology integration'],
-        duration: '45–60 min', sessions: 'As clinically indicated'
     },
     manual: {
         icon: '🤲', title: 'Manual Therapy',
