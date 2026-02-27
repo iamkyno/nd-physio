@@ -274,22 +274,22 @@ const serviceData = {
     },
     ortho: {
         icon: '🦴', title: 'Orthopaedic Rehabilitation',
-        img: 'Orthopaedic-Rehabilitation-Image.jpg',
-        intro: 'Specialist rehabilitation following orthopaedic surgery and musculoskeletal injury — focused on restoring strength, mobility and return-to-function through progressive loading and tailored exercise.',
+        img: 'Orthopaedic-Rehabilitation-Image.webp',
+        intro: 'Rehabilitation following orthopaedic surgery and musculoskeletal injury focused on restoring strength, mobility and return-to-function through progressive loading and tailored exercise.',
         treats: ['Total knee and hip replacement rehab', 'Post-operative mobilisation and strengthening', 'Soft-tissue injury rehab', 'Tendon and ligament recovery', 'Post-fracture rehabilitation'],
         duration: '45–60 min', sessions: '4–12 sessions (individualised)'
     },
     electro: {
         icon: '⚡', title: 'Electrotherapy',
         img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=320&fit=crop&q=80',
-        intro: 'Targeted electrotherapy modalities to reduce pain, modulate neuromuscular activity and accelerate tissue healing as part of a broader physiotherapy plan.',
-        treats: ['TENS for pain relief', 'Interferential therapy', 'Shockwave therapy', 'Neuromuscular stimulation', 'Post-operative analgesia support'],
+        intro: '',
+        treats: ['Transcutaneous electrical nerve stimulation', 'Interferential therapy', 'Shockwave therapy', 'Ultrasound therapy', 'Shortwave diathermy'],
         duration: '30–45 min', sessions: 'Often used adjunctively across course of care'
     },
     respiratory: {
         icon: '🫁', title: 'Respiratory Physiotherapy',
         img: 'https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&h=320&fit=crop&q=80',
-        intro: 'Assessment and treatment to improve ventilation, airway clearance and functional respiratory capacity — helpful for chronic and acute respiratory conditions.',
+        intro: '',
         treats: ['COPD management', 'Post-operative chest physiotherapy', 'Bronchiectasis and secretion clearance', 'Breathing retraining', 'Pulmonary rehabilitation'],
         duration: '45–60 min', sessions: 'Programme-based / ongoing'
     },
