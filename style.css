@@ -671,7 +671,7 @@ main.content.terms-privacy h2 {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -1017,7 +1017,7 @@ footer {
 .research-inner h2 { color: var(--white); }
 .research-inner p  { color: rgba(255,255,255,.7); }
 .research-inner .section-header { margin-bottom: 2.5rem; }
-.research-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.research-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 .research-card {
     background: rgba(255,255,255,.06);
     border: 1px solid rgba(255,255,255,.12);
