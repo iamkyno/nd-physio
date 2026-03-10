@@ -232,7 +232,7 @@ const serviceData = {
     },
     neuro: {
         icon: '🧠', title: 'Neurological Rehabilitation',
-        img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=320&fit=crop&q=80',
+        img: 'Neurological-Rehabilitation-Image.webp',
         intro: 'Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.',
         treats: ['Stroke', '⁠Traumatic brain injury', 'Balance and co-ordination disorders', 'Spinal cord injuries'],
         duration: '60 min', sessions: 'Long-term ongoing programme'
@@ -260,13 +260,13 @@ const serviceData = {
     },
     respiratory: {
         icon: '🫁', title: 'Respiratory Physiotherapy',
-        img: 'Respiratory-Physiotherapy-Image.webp',
+        img: 'Respitory-Physio-Image.webp',
         intro: '',
         treats: ['COPD', 'Asthma', 'Bronchitis', 'Pneumonia'],
         duration: '30 min', sessions: 'Programme-based / ongoing'
     },
     dryneedling: {
-        icon: '💉', title: 'Dry Needling (IMS)',
+        icon: '⚕️', title: 'Dry Needling (IMS)',
         img: 'Dry-Needling-Image.webp',
         intro: 'This technique involves the insertion of needles into myofascial trigger points. It reduces pain, increases blood flow, and restores optimal nerve function. It relaxes tight muscles.',
         treats: ['Myofascial pain', 'Trigger point release', 'Chronic muscular tightness', 'Refractory soft-tissue pain', 'Enhanced rehabilitation response'],
