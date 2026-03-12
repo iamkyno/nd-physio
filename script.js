@@ -232,7 +232,7 @@ const serviceData = {
     },
     neuro: {
         icon: '🧠', title: 'Neurological Rehabilitation',
-        img: 'Neurological-Rehabilitation-Image.webp',
+        img: 'Neurological-Rehab-Image.webp',
         intro: 'Our approach is grounded in the latest clinical research and interprofessional rehabilitation frameworks.',
         treats: ['Stroke', '⁠Traumatic brain injury', 'Balance and co-ordination disorders', 'Spinal cord injuries'],
         duration: '60 min', sessions: 'Long-term ongoing programme'
