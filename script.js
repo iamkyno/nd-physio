@@ -27,10 +27,12 @@ function openBooking() {
     if (d) d.min = new Date().toISOString().split('T')[0];
     openModal('bookingModal');
 }
-function closeBooking()      { closeModal('bookingModal'); }
-function closeSuccess()      { closeModal('successModal'); }
-function closeTeamModal()    { closeModal('teamModal'); }
-function closeServiceModal() { closeModal('serviceModal'); }
+function closeBooking()        { closeModal('bookingModal'); }
+function closeSuccess()        { closeModal('successModal'); }
+function closeTeamModal()      { closeModal('teamModal'); }
+function closeServiceModal()   { closeModal('serviceModal'); }
+function openInstagramModal()  { openModal('instagramModal'); }
+function closeInstagramModal() { closeModal('instagramModal'); }
 
 function openModal(id) {
     const m = document.getElementById(id);

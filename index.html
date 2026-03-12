@@ -616,7 +616,7 @@
                 <div class="social-links">
                     <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" class="social-btn" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
                     <a href="mailto:info@noxolodumaphysio.co.za" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram" onclick="openInstagramModal(); return false;"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://tiktok.com" target="_blank" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="https://wa.me/27738519950" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -709,7 +709,7 @@
                 </ul>
                 <div class="footer-social">
                     <a href="https://www.researchgate.net/profile/Noxolo_Duma2" target="_blank" class="social-btn" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
-                    <a href="https://www.instagram.com/noxoloduma_physio?igsh=Y3Q0NDJmcGQwMTg=" target="_blank" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Instagram" aria-label="Instagram" onclick="openInstagramModal(); return false;"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://x.com/noxy_duma?s=11" target="_blank" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-x"></i></a>
                     <a href="https://www.tiktok.com/@noxyduma_?_r=1&_t=ZS-94DhLxooBOS" target="_blank" title="TikTok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="https://wa.me/27738519950" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -829,6 +829,31 @@
     <div class="modal-box medium">
         <button class="modal-close" onclick="closeServiceModal()">×</button>
         <div id="serviceModalContent"></div>
+    </div>
+</div>
+
+<!-- INSTAGRAM CHOOSER MODAL -->
+<div id="instagramModal" class="modal">
+    <div class="modal-box small">
+        <button class="modal-close" onclick="closeInstagramModal()" aria-label="Close">×</button>
+        <div class="modal-header-bar">
+            <h2><i class="fa-brands fa-instagram"></i> Follow Us on Instagram</h2>
+            <p>Choose which Instagram page you'd like to visit.</p>
+        </div>
+        <div class="ig-choice-grid">
+            <a href="https://www.instagram.com/noxoloduma_physio?igsh=Y3Q0NDJmcGQwMTg=" target="_blank" class="ig-choice-card" onclick="closeInstagramModal()">
+                <div class="ig-choice-icon"><i class="fa-brands fa-instagram"></i></div>
+                <strong>Business Page</strong>
+                <span>@noxoloduma_physio</span>
+                <p>Our official practice profile — services, updates &amp; news.</p>
+            </a>
+            <a href="https://www.instagram.com/noxy_duma" target="_blank" class="ig-choice-card" onclick="closeInstagramModal()">
+                <div class="ig-choice-icon"><i class="fa-brands fa-instagram"></i></div>
+                <strong>Personal Page</strong>
+                <span>@noxy_duma</span>
+                <p>Noxolo's personal profile — insights &amp; behind the scenes.</p>
+            </a>
+        </div>
     </div>
 </div>
 
