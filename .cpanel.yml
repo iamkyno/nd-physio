@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/YOUR_CPANEL_USERNAME/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp privacy.html $DEPLOYPATH
+    - /bin/cp terms.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp send_booking.php $DEPLOYPATH
+    - /bin/cp send_contact.php $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
