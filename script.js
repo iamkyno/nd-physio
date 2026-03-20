@@ -71,7 +71,7 @@ function handleBooking(e) {
                 form.reset();
             }, 300);
         } else {
-            alert('Unable to send booking. Please try again or email mbhelelindo23@gmail.com');
+            alert('Unable to send booking. Please try again or email bookings@noxolodumaphysio.co');
         }
     }).catch(err => {
         console.error('Booking send error', err);
@@ -91,7 +91,7 @@ function handleContact(e) {
             alert('✅ Message sent successfully!\n\nThank you for reaching out to Noxolo Duma Physiotherapy. We\'ll get back to you within 24 hours.');
             form.reset();
         } else {
-            alert('Unable to send message. Please try again or email mbhelelindo23@gmail.com');
+            alert('Unable to send message. Please try again or email enquiries@noxolodumaphysio.co.za');
         }
     }).catch(err => {
         console.error('Contact send error', err);
