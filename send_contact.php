@@ -106,7 +106,21 @@ $body .= "Consent Timestamp: " . $consentTime . "\n";
 $body .= "Sender IP: " . $remoteIp . "\n";
 
 if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
-    echo json_encode(['success' => false, 'error' => 'phpmailer_missing']);
+    // Fallback: use PHP's native mail() when PHPMailer/vendor is not available
+    $headers  = "From: {$fromName} <{$fromAddress}>\r\n";
+    $headers .= "Reply-To: {$email} <{$name}>\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+
+    $allSent = true;
+    foreach (explode(',', $to) as $recipient) {
+        $recipient = trim($recipient);
+        if ($recipient !== '' && !@mail($recipient, $subject, $body, $headers)) {
+            $allSent = false;
+        }
+    }
+
+    echo json_encode($allSent ? ['success' => true] : ['success' => false, 'error' => 'mail_failed']);
     exit;
 }
 

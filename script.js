@@ -83,7 +83,8 @@ function getRecaptchaErrorMessage(errorCode, fallbackMessage) {
         recaptcha_failed: 'reCAPTCHA verification failed. Please refresh the page and try again.',
         missing_fields: 'Please complete all required fields before submitting.',
         consent_required: 'Please accept the Privacy Policy and Terms before submitting.',
-        mail_failed: 'Your message could not be sent right now. Please try again in a few minutes.'
+        mail_failed: 'Your message could not be sent right now. Please try again in a few minutes.',
+        phpmailer_missing: 'The mail library is missing on the server. Please email enquiries@noxolodumaphysio.co.za directly.'
     };
     return errorMap[errorCode] || fallbackMessage;
 }
