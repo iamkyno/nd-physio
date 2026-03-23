@@ -864,6 +864,22 @@ main.content.terms-privacy h2 {
     color: var(--teal-dark);
 }
 
+.recaptcha-wrap {
+    align-items: flex-start;
+}
+
+.recaptcha-wrap > div {
+    min-height: 78px;
+}
+
+@media (max-width: 480px) {
+    .recaptcha-wrap > div {
+        transform: scale(0.93);
+        transform-origin: left top;
+    }
+}
+
+
 /* ── FOOTER ───────────────────────────────────────── */
 footer {
     background: var(--dark);

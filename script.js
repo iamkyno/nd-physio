@@ -53,6 +53,40 @@ document.addEventListener('keydown', e => {
 });
 
 // ── FORM HANDLERS ──────────────────────────────────────────
+const recaptchaWidgetIds = {
+    booking: null,
+    contact: null
+};
+
+function onRecaptchaApiLoad() {
+    const siteKey = (window.RECAPTCHA_SITE_KEY || '').trim();
+    if (!siteKey || siteKey === 'YOUR_RECAPTCHA_SITE_KEY') {
+        console.warn('reCAPTCHA site key is not configured. Set window.RECAPTCHA_SITE_KEY in index.html');
+        return;
+    }
+
+    const bookingEl = document.getElementById('bookingRecaptcha');
+    const contactEl = document.getElementById('contactRecaptcha');
+
+    if (bookingEl && window.grecaptcha) {
+        recaptchaWidgetIds.booking = window.grecaptcha.render(bookingEl, { sitekey: siteKey });
+    }
+    if (contactEl && window.grecaptcha) {
+        recaptchaWidgetIds.contact = window.grecaptcha.render(contactEl, { sitekey: siteKey });
+    }
+}
+
+function getRecaptchaErrorMessage(errorCode, fallbackMessage) {
+    const errorMap = {
+        recaptcha_missing: 'Please complete the reCAPTCHA check before submitting.',
+        recaptcha_not_configured: 'reCAPTCHA is not configured on the server yet. Please try again later.',
+        recaptcha_failed: 'reCAPTCHA verification failed. Please refresh the page and try again.',
+        missing_fields: 'Please complete all required fields before submitting.',
+        consent_required: 'Please accept the Privacy Policy and Terms before submitting.',
+        mail_failed: 'Your message could not be sent right now. Please try again in a few minutes.'
+    };
+    return errorMap[errorCode] || fallbackMessage;
+}
 function handleBooking(e) {
     e.preventDefault();
     const form = e.target;
@@ -69,9 +103,12 @@ function handleBooking(e) {
                 document.getElementById('successEmailDisplay').textContent = email;
                 openModal('successModal');
                 form.reset();
+                if (window.grecaptcha && recaptchaWidgetIds.booking !== null) {
+                    window.grecaptcha.reset(recaptchaWidgetIds.booking);
+                }
             }, 300);
         } else {
-            alert('Unable to send booking. Please try again or email bookings@noxolodumaphysio.co');
+            alert(getRecaptchaErrorMessage(data?.error, 'Unable to send booking. Please try again or email bookings@noxolodumaphysio.co'));
         }
     }).catch(err => {
         console.error('Booking send error', err);
@@ -88,10 +125,13 @@ function handleContact(e) {
         body: formData
     }).then(res => res.json()).then(data => {
         if (data && data.success) {
-            alert('✅ Message sent successfully!\n\nThank you for reaching out to Noxolo Duma Physiotherapy. We\'ll get back to you within 24 hours.');
+            alert("Message sent successfully!\n\nThank you for reaching out to Noxolo Duma Physiotherapy. We'll get back to you within 24 hours.");
             form.reset();
+            if (window.grecaptcha && recaptchaWidgetIds.contact !== null) {
+                window.grecaptcha.reset(recaptchaWidgetIds.contact);
+            }
         } else {
-            alert('Unable to send message. Please try again or email enquiries@noxolodumaphysio.co.za');
+            alert(getRecaptchaErrorMessage(data?.error, 'Unable to send message. Please try again or email enquiries@noxolodumaphysio.co.za'));
         }
     }).catch(err => {
         console.error('Contact send error', err);

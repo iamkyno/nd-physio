@@ -9,6 +9,60 @@ function val($k) {
     return isset($_POST[$k]) ? trim($_POST[$k]) : '';
 }
 
+function verifyRecaptchaToken($token, $remoteIp = '') {
+    $secret = getenv('RECAPTCHA_SECRET_KEY');
+    if (!$secret) {
+        return ['ok' => false, 'error' => 'recaptcha_not_configured'];
+    }
+    if (!$token) {
+        return ['ok' => false, 'error' => 'recaptcha_missing'];
+    }
+
+    $verifyData = [
+        'secret' => $secret,
+        'response' => $token
+    ];
+    if (filter_var($remoteIp, FILTER_VALIDATE_IP)) {
+        $verifyData['remoteip'] = $remoteIp;
+    }
+    $payload = http_build_query($verifyData);
+
+    $responseBody = false;
+
+    if (function_exists('curl_init')) {
+        $ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 8);
+        $responseBody = curl_exec($ch);
+        curl_close($ch);
+    }
+
+    if ($responseBody === false) {
+        $context = stream_context_create([
+            'http' => [
+                'method' => 'POST',
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                'content' => $payload,
+                'timeout' => 8
+            ]
+        ]);
+        $responseBody = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+    }
+
+    if ($responseBody === false) {
+        return ['ok' => false, 'error' => 'recaptcha_failed'];
+    }
+
+    $decoded = json_decode($responseBody, true);
+    if (!is_array($decoded) || empty($decoded['success'])) {
+        return ['ok' => false, 'error' => 'recaptcha_failed'];
+    }
+
+    return ['ok' => true];
+}
+
 $requestType = val('requestType');
 $fullName = val('fullName');
 $bookEmail = val('bookEmail');
@@ -19,6 +73,7 @@ $bookDate = val('bookDate');
 $branch = val('branch');
 $description = val('description');
 $consent = val('consent');
+$captchaToken = val('g-recaptcha-response');
 
 $remoteIp = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 $consentTime = date('c');
@@ -29,6 +84,12 @@ if (!$fullName || !$bookEmail) {
 }
 if (strtolower($consent) !== 'yes') {
     echo json_encode(['success' => false, 'error' => 'consent_required']);
+    exit;
+}
+
+$captchaResult = verifyRecaptchaToken($captchaToken, $remoteIp);
+if (empty($captchaResult['ok'])) {
+    echo json_encode(['success' => false, 'error' => $captchaResult['error'] ?? 'recaptcha_failed']);
     exit;
 }
 

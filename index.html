@@ -694,13 +694,16 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="How can we help you?"></textarea>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="How can we help you?" required></textarea>
                     </div>
                     <div class="form-group">
                         <label class="consent-label">
                             <input type="checkbox" id="contactConsent" name="consent" value="yes" required>
                             I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Service</a>.
                         </label>
+                    </div>
+                    <div class="form-group recaptcha-wrap">
+                        <div id="contactRecaptcha"></div>
                     </div>
                     <button type="submit" class="btn-primary full-width">Send Message</button>
                 </form>
@@ -844,6 +847,9 @@
                     I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Service</a>.
                 </label>
             </div>
+            <div class="form-group recaptcha-wrap">
+                <div id="bookingRecaptcha"></div>
+            </div>
             <button type="submit" class="btn-primary full-width">Confirm Appointment Request</button>
         </form>
     </div>
@@ -907,6 +913,10 @@
 <!-- SCROLL TO TOP -->
 <button id="scrollTop" class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
+<script>
+    window.RECAPTCHA_SITE_KEY = 'YOUR_RECAPTCHA_SITE_KEY';
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaApiLoad&render=explicit" async defer></script>
 <script src="script.js"></script>
 </body>
 </html>
