@@ -12,6 +12,9 @@ function val($k) {
 function verifyRecaptchaToken($token, $remoteIp = '') {
     $secret = getenv('RECAPTCHA_SECRET_KEY');
     if (!$secret) {
+        $secret = '6LeSgpQsAAAAAFc6LX4-S7WGnIdcA7k1TSrvofzU';
+    }
+    if (!$secret || $secret === 'YOUR_RECAPTCHA_SECRET_KEY') {
         return ['ok' => false, 'error' => 'recaptcha_not_configured'];
     }
     if (!$token) {
