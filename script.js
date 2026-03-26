@@ -258,7 +258,7 @@ function openTeamModal(key) {
             <p>${d.bio2}</p>
             ${d.extra ? `<p style="margin-top:.5rem;">${d.extra}</p>` : ''}
             <button class="btn-primary full-width" onclick="closeTeamModal();openBooking();">
-                Book with your appointment
+                Book your appointment
             </button>
         </div>`;
     openModal('teamModal');
