@@ -227,15 +227,6 @@ const teamData = {
         tags: ['Operations', 'Patient Care', 'Leadership'],
         bio: 'Nompumelelo Gracious Geza is an accomplished and compassionate Practice Manager with a strong multidisciplinary foundation in healthcare and administration. She holds qualifications in Business Administration, a Certificate in Early Childhood Development (ECD) and Education, and a Diploma in Nursing, equipping her with a well-rounded skill set that bridges clinical expertise, operational leadership, and patient-centered care.',
         bio2: 'With a natural warmth and welcoming presence, Nompumelelo is deeply committed to creating a supportive and efficient healthcare environment where both patients and staff feel valued. Her background in nursing gives her a genuine understanding of patient needs, while her training in business administration enables her to lead with structure, strategy, and operational excellence. This unique combination allows her to manage practice operations effectively while maintaining a compassionate, human-centered approach. She is passionate about making a meaningful difference in the lives of others. For Nompumelelo, the most rewarding part of her role is witnessing patients recover and return with gratitude and renewed smiles. Knowing that her leadership contributes to positive health outcomes and uplifting experiences is what makes the hard work worthwhile. Driven, loving, and dedicated, she approaches her work with integrity, empathy, and a strong sense of purpose. Outside of her professional responsibilities, Nompumelelo is a proud tea enthusiast — a self-proclaimed tea connoisseur who enjoys discovering and savoring new blends whenever she gets the chance.'
-    },
-    khanyiswa: {
-        name: 'Khanyiswa M. Ndziweni',
-        role: 'Administrator',
-        img: 'Khanyiswa.jpg',
-        qual: 'Computer Certificate - Aviation Certificate (Skyy Aviation Academy)',
-        tags: ['Front Desk', 'Patient Support', 'Administration'],
-        bio: 'Khanyiswa Miranda Ndziweni is a driven and hardworking Medical Secretary. With a strong passion for excellence and a natural ability to connect with people, she plays a key role in ensuring smooth day-to-day operations while creating a welcoming and professional environment for patients.',
-        bio2: 'With experience in customer engagement, Khanyiswa brings strong communication skills, efficiency, and attention to detail to her role. She holds a Computer Certificate equipping her with essential administrative and technical skills, as well as an Aviation Certificate from Skyy Aviation Academy a testament to her ambition, versatility, and commitment to continuous growth. Khanyiswa approaches her work with enthusiasm and professionalism, And she provides exceptional support to both patients and the team. Khanyiswa can recite the entire script of her favourite movie, a reflection of her vibrant personality and impressive memory.'
     }
 };
 
